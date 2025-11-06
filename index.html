@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
     <title>Keyboard prototype</title>
 </head>
 <body>
-    <div class="main">
+<div class="main">
 	<header>
 		<h1>KEYBOARD</h1>
+      <script type="text/javascript" src="key.js"></script>  
     </header>
+
 	<main class="keyboard-wrapper">
 		<div class="header-keys">
 			<div class="logitech-logo"><svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 118 118">
@@ -70,7 +76,7 @@
 		</ul>
 		<div class="center-keys">
 			<ul class="center-keys_row-1">
-				<li data-key="Backquote">`</li>
+				<li data-key="Blockquote">`</li>
 				<li data-key="Digit1">1</li>
 				<li data-key="Digit2">2</li>
 				<li data-key="Digit3">3</li>
@@ -169,7 +175,7 @@
 		</div>
 		<ul class="print-scroll-pause-keys">
 			<li class="long-word-key">PRTSC</li>
-			<li class="long-word-key" data-key="ScrollLock">SCRLK</li>
+			<li class="long-word-key" data-key="ScrollLock">SCROLLLOK</li>
 			<li class="long-word-key" data-key="Pause">PAUSE</li>
 		</ul>
 		<ul class="home-end-arrow-keys">
@@ -205,16 +211,9 @@
 		</ul>
 	</main>
 	<footer>
-		<div class="smaller-text">Try using your keyboard or click on every button 😉</div>
-		<div>by <a href="https://www.linkedin.com/in/staniel-petrov/" target="_blank">Staniel Petrov</a></div>
+		<div class="footer-text">Created KID-42 <a href="
 	</footer>
 </div>
-
-<div>
-	<audio id="tactileKeySound" preload="auto" src="https://www.logitechg.com/content/dam/gaming/en/innovation/mechanical-switches/gl-tactile.mp3" />
-	<audio id="linearKeySound" preload="auto" src="https://www.logitechg.com/content/dam/gaming/en/innovation/mechanical-switches/gl-linear.mp3" />
-	<audio id="clickyKeySound" preload="auto" src="https://www.logitechg.com/content/dam/gaming/en/innovation/mechanical-switches/gl-clicky.mp3" />
-</div>
-    
+  
 </body>
 </html>
