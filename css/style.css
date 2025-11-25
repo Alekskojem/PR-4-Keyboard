@@ -2,7 +2,7 @@ $key-gap: 0.125rem;
 $key-group-gap: 0.625rem;
 
 :root {
-    --key-text-highlight: #000000;
+    --key-text-highlight: #ffffff;
 }
 
 header,
@@ -109,7 +109,7 @@ a {
         display: grid;
         place-items: center;
         grid-template-columns: repeat(4, 2.5rem);
-        grid-column-start: 2;
+        grid-column-start: 3;
         gap: $key-gap;
 
         li {
@@ -123,7 +123,7 @@ a {
 
     .utility-keys {
         grid-template-columns: repeat(2, 2.5rem);
-        grid-column-start: 3;
+        grid-column-start: 4;
 
         li {
             font-size: 1.125rem;
@@ -144,7 +144,7 @@ a {
     .info-lights {
         display: grid;
         grid-template-columns: repeat(2, 2.5rem);
-        grid-column-start: 4;
+        grid-column-start: 5;
 
         .info-light {
             cursor: auto;
@@ -396,7 +396,7 @@ a {
 
 .header-keys {
     display: grid;
-    grid-template-columns: 10rem 12.125rem 14.875rem auto 10.5rem;
+    grid-template-columns: 2.5rem 5rem 12.125rem 14.875rem auto 10.5rem;
     grid-template-rows: 2.5rem;
     grid-column-start: 1;
     grid-column-end: span 4;

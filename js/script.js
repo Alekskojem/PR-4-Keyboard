@@ -7,7 +7,6 @@ const numlockLightElement = document.querySelector(
 );
 
 const lists = document.querySelectorAll(".keyboard-wrapper li");
-const rootElement = document.querySelector(":root");
 
 document.addEventListener("click", handleListClick);
 
@@ -20,10 +19,6 @@ window.addEventListener("blur", handleWindowBlur);
 function handleListClick(event) {
     const el = event.target;
     
-    if (el.localName === "li" && !el.classList.contains("round-key")) {
-        // Звук клавиш удален по требованию
-    }
-
     if (
         el.parentNode.classList.contains("memory-keys") &&
         !el.classList.contains("memory")
